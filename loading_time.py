@@ -32,7 +32,7 @@ def mkdir():
 
 def git():
     add='git add ' + d1 + '\.'
-    os.system()   
+    os.system(add)   
 
 def work():
     now=datetime.datetime.now()
@@ -46,12 +46,12 @@ def work():
             ret=com.read()
             f=time.perf_counter()
             com.close()
-            print(name[i],file=fc)
-            print(f-s,"s",file=fc)
+            print(name[i],f-s,"s",file=fc)
 
 def main():
     mkdir()
     work()
+    git()
 
 if __name__ == '__main__':
     main()
