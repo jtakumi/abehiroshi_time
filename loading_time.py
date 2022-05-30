@@ -30,7 +30,16 @@ url=[
     'https://www.aeon.info/',
     'https://www.pixiv.net/',
     'https://www.starbucks.co.jp/',
-    'https://github.com/'
+    'https://github.com/',
+    'https://spitz-web.com/',
+    'https://www.mrchildren.jp/',
+    'https://www.instagram.com/',
+    'https://yorushika.com/',
+    'https://www.walmart.com/',
+    'https://www.microsoft.com/ja-jp/',
+    'https://reissuerecords.net/',
+    'https://zutomayo.net/',
+    'https://www.kantei.go.jp/'
     ]
 name=[
     '阿部寛',
@@ -53,7 +62,16 @@ name=[
     'AEON',
     'Pixiv',
     'Starbucks japan',
-    'Github'
+    'Github',
+    'スピッツ',
+    'Mr.Children',
+    'Instagram',
+    'ヨルシカ',
+    'Walmart',
+    'Microsoft 日本語サイト',
+    '米津玄師',
+    'ずっと真夜中でいいのに。',
+    '首相官邸ホームページ'
 ]
 
 ret=[]
@@ -67,10 +85,6 @@ def mkdir():
     smk='mkdir ' +  d1 + '.\sort'
     os.system(smk)
 
-
-def git():
-    add='git add ' + d1 + '\.'
-    os.system(add)   
 
 def work():
     now=datetime.datetime.now()
@@ -106,11 +120,40 @@ def sort(now_t):
     with open(fn,'w',encoding='utf-8-sig') as fc:
         for j in range(len(name)):
             print(name[j],ret[j],'s',file=fc)
+
+def git():
+    add='git add .'
+    os.system(add)   
+
+def runtime_file(now_t,runtime,func):
+    rfn= d1 + '\_runtime' + d1 + now_t + 'txt'
+    with open(rfn,'w',encoding='utf-8-sig') as rf:
+        for r in range(1,len(runtime)):
+            print(func[r-1],file=rf)
+            print(runtime[r]-runtime[r-1],'s',file=rf)
+        print('total',file=rf)
+        print(runtime[-1]-runtime[0],file=rf)
+
+
 def main():
+    #処理実行時間の検証
+    runtime=[]
+    func=['mkdir','work','sort','git']
+    runtime.append(time.perf_counter())
     mkdir()
+    runtime.append(time.perf_counter())
+
     now_t=work()
+    runtime.append(time.perf_counter())
+
     sort(now_t)
+    runtime.append(time.perf_counter())
+
     git()
+    runtime.append(time.perf_counter())
+
+    runtime_file(now_t,runtime,func)
+
     #すべてが完了したら阿部寛のホームページを開く
     webbrowser.open(url[0])
 
