@@ -123,7 +123,9 @@ def sort(now_t):
 
 def git():
     add='git add .'
-    os.system(add)   
+    os.system(add) 
+    gcm='git commit -m ' + d1
+    os.system(gcm)  
 
 def runtime_file(now_t,runtime,func):
     rfn= d1 + '\_runtime' + d1 + now_t + 'txt'
