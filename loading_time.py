@@ -39,7 +39,12 @@ url=[
     'https://www.microsoft.com/ja-jp/',
     'https://reissuerecords.net/',
     'https://zutomayo.net/',
-    'https://www.kantei.go.jp/'
+    'https://www.kantei.go.jp/',
+    'https://www.jbd.co.jp/',
+    'https://www.usa.gov/',
+    'https://pmarusama.com/',
+    'https://www.u-tokyo.ac.jp/ja/index.html',
+    'https://www.ua.emb-japan.go.jp/itprtop_ja/index.html'
     ]
 name=[
     '阿部寛',
@@ -71,7 +76,12 @@ name=[
     'Microsoft 日本語サイト',
     '米津玄師',
     'ずっと真夜中でいいのに。',
-    '首相官邸ホームページ'
+    '首相官邸ホームページ',
+    '日本ビジネス開発',
+    'アメリカ政府',
+    'P丸様。HP',
+    '東京大学',
+    'ウクライナ大使館'
 ]
 
 ret=[]
