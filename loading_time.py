@@ -44,7 +44,9 @@ url=[
     'https://www.usa.gov/',
     'https://pmarusama.com/',
     'https://www.u-tokyo.ac.jp/ja/index.html',
-    'https://www.ua.emb-japan.go.jp/itprtop_ja/index.html'
+    'https://www.ua.emb-japan.go.jp/itprtop_ja/index.html',
+    'https://rivian.com/',
+    'https://www.bing.com/'
     ]
 name=[
     '阿部寛',
@@ -81,7 +83,9 @@ name=[
     'アメリカ政府',
     'P丸様。HP',
     '東京大学',
-    'ウクライナ大使館'
+    'ウクライナ大使館',
+    'RIVIAN',
+    'Bing'
 ]
 
 ret=[]
