@@ -169,6 +169,7 @@ def main():
     runtime.append(time.perf_counter())
 
     runtime_file(now_t,runtime,func)
+    git()
 
     #すべてが完了したら阿部寛のホームページを開く
     webbrowser.open(url[0])
