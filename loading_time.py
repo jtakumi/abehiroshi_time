@@ -101,6 +101,7 @@ def mkdir():
 
 
 def work():
+    #実行した時間をファイル名とする
     now=datetime.datetime.now()
     now_t=now.strftime('%H-%M-%S')
     fn=d1 +  '\loading_time_' + now_t + 'data.csv'
@@ -121,10 +122,12 @@ def work():
                 f=time.perf_counter()
                 com.close()
                 ret.append(f-s)
+                #サイト名と処理時間を書き出し
                 print(name[i],f-s,"s",file=fc)
     return now_t
 
 def sort(now_t):
+    #昇順で並べ替え
     global name
     global ret
     sdata=list(zip(name,ret))
@@ -145,6 +148,7 @@ def runtime_file(now_t,runtime,func):
     rfn= d1 + '\_runtime' + d1 + now_t + 'txt'
     with open(rfn,'w',encoding='utf-8-sig') as rf:
         for r in range(1,len(runtime)):
+            #前の時間と比べるために添え字を１からスタートしている
             print(func[r-1],file=rf)
             print(runtime[r]-runtime[r-1],'s',file=rf)
         print('total',file=rf)
@@ -154,7 +158,7 @@ def runtime_file(now_t,runtime,func):
 def main():
     #処理実行時間の検証
     runtime=[]
-    func=['mkdir','work','sort','git']
+    func=['mkdir','work','sort']
     runtime.append(time.perf_counter())
     mkdir()
     runtime.append(time.perf_counter())
@@ -163,9 +167,6 @@ def main():
     runtime.append(time.perf_counter())
 
     sort(now_t)
-    runtime.append(time.perf_counter())
-
-    git()
     runtime.append(time.perf_counter())
 
     runtime_file(now_t,runtime,func)
