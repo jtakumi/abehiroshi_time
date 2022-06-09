@@ -46,7 +46,11 @@ url=[
     'https://www.u-tokyo.ac.jp/ja/index.html',
     'https://www.ua.emb-japan.go.jp/itprtop_ja/index.html',
     'https://rivian.com/',
-    'https://www.bing.com/'
+    'https://www.bing.com/',
+    'https://www.mod.go.jp/msdf/kure/info/gallery/20201001-2_101mdkaitai.html',
+    'https://colopl.co.jp/alicegearaegis/lp/countdown/homepage/',
+    'https://speedsample.blog.fc2.com/',
+    'http://natori-yuko.main.jp/'
     ]
 name=[
     '阿部寛',
@@ -85,7 +89,11 @@ name=[
     '東京大学',
     'ウクライナ大使館',
     'RIVIAN',
-    'Bing'
+    'Bing',
+    '海上自衛隊第101掃海隊',
+    'はさみメンテナンス株式会社(架空)',
+    '爆速テンプレート(FC2)',
+    '名取裕子'
 ]
 
 ret=[]
