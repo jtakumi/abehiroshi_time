@@ -50,7 +50,8 @@ url=[
     'https://www.mod.go.jp/msdf/kure/info/gallery/20201001-2_101mdkaitai.html',
     'https://colopl.co.jp/alicegearaegis/lp/countdown/homepage/',
     'https://speedsample.blog.fc2.com/',
-    'http://natori-yuko.main.jp/'
+    'http://natori-yuko.main.jp/',
+    'https://global.yamaha-motor.com/jp/showroom/event/tokyo-motorshow-2019-bs/'
     ]
 name=[
     '阿部寛',
@@ -93,7 +94,8 @@ name=[
     '海上自衛隊第101掃海隊',
     'はさみメンテナンス株式会社(架空)',
     '爆速テンプレート(FC2)',
-    '名取裕子'
+    '名取裕子',
+    'ヤマハ発動機特設サイト'
 ]
 
 ret=[]
