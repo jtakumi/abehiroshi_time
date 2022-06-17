@@ -51,7 +51,8 @@ url=[
     'https://colopl.co.jp/alicegearaegis/lp/countdown/homepage/',
     'https://speedsample.blog.fc2.com/',
     'http://natori-yuko.main.jp/',
-    'https://global.yamaha-motor.com/jp/showroom/event/tokyo-motorshow-2019-bs/'
+    'https://global.yamaha-motor.com/jp/showroom/event/tokyo-motorshow-2019-bs/',
+    "https://jp.investing.com/"
     ]
 name=[
     '阿部寛',
@@ -95,7 +96,8 @@ name=[
     'はさみメンテナンス株式会社(架空)',
     '爆速テンプレート(FC2)',
     '名取裕子',
-    'ヤマハ発動機特設サイト'
+    'ヤマハ発動機特設サイト',
+    "Investing.com jp ver"
 ]
 
 ret=[]
