@@ -155,6 +155,7 @@ def git():
     os.system(add) 
     gcm='git commit -m ' + d1
     os.system(gcm)  
+    os.system("git push origin a1")
 
 def runtime_file(now_t,runtime,func):
     rfn= d1 + '\_runtime' + d1 + now_t + 'txt'
