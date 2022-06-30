@@ -52,7 +52,9 @@ url=[
     'https://speedsample.blog.fc2.com/',
     'http://natori-yuko.main.jp/',
     'https://global.yamaha-motor.com/jp/showroom/event/tokyo-motorshow-2019-bs/',
-    "https://jp.investing.com/"
+    "https://jp.investing.com/",
+    "https://www.rakuten.co.jp/",
+    "https://www.disney.co.jp/"
     ]
 name=[
     '阿部寛',
@@ -97,7 +99,9 @@ name=[
     '爆速テンプレート(FC2)',
     '名取裕子',
     'ヤマハ発動機特設サイト',
-    "Investing.com jp ver"
+    "Investing.com jp",
+    "楽天",
+    "Disney jp"
 ]
 
 ret=[]
